@@ -1,0 +1,185 @@
+@font-face {
+    font-family: karasha;
+    src: url('../fonts/Karasha.ttf');
+}
+
+@font-face {
+    font-family: mareka;
+    src: url('../fonts/mareka.ttf');
+}
+
+
+body {
+    background-image: url('../images/Circus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: karasha;
+    color: rgb(190, 49, 73);
+    background-color: rgb(245, 232, 232);
+    border: solid 3px pink;
+    border-radius: 50px;
+    width: fit-content;
+    padding-inline: 150px;
+    margin: 20px;
+}
+
+#buttons p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: karasha;
+    color: rgb(190, 49, 73);
+    background-color: rgb(245, 232, 232);
+    border: solid 3px pink;
+    border-radius: 50px;
+    width: fit-content;
+    padding-inline: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+#buttons p:hover {
+    background-color: #be3149;
+    color: #f5e8e8;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+#containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    height: 100vh;
+}
+
+.headGirl {
+    background-color: #dba9a9;
+    border: solid 3px #5e2a00;
+    border-radius: 50%;
+    position: relative;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    transition: top 0.5s ease, left 0.5s ease;
+    animation: scaleAndRotate forwards;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Classe pour activer la rotation */
+.rotate {
+    animation: rotate 0.5s ease;
+}
+
+.headGirl img {
+    width: 100%;
+    -webkit-user-drag: none;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.cacher {
+    display: none !important;
+}
+
+#containerScore p{
+    font-size: 60px;
+    font-family: mareka;
+    color: rgb(190, 49, 73);
+    background-color: rgb(245, 232, 232);
+    border: solid 3px pink;
+    border-radius: 50px;
+    width: fit-content;
+    padding-inline: 50px;
+}
+#containerScore {
+    display: flex;
+    position: absolute;
+    bottom: 55%;
+    left: 33%;
+}
+
+#containerLevel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    position: absolute;
+    bottom: 30%;
+    left: 37%;
+}
+
+#containerLevel p {
+    font-size: 60px;
+    font-family: mareka;
+    color: rgb(190, 49, 73);
+    background-color: rgb(245, 232, 232);
+    border: solid 3px pink;
+    border-radius: 50px;
+    width: fit-content;
+    padding-inline: 50px;
+    transition: background-color 0.3s ease;
+}
+#containerLevel p:hover {
+    background-color: #be3149;
+    color: #f5e8e8;
+}
+
+#containerEnd p {
+    font-size: 60px;
+    font-family: mareka;
+    color: rgb(190, 49, 73);
+    background-color: rgb(245, 232, 232);
+    border: solid 3px pink;
+    border-radius: 50px;
+    width: fit-content;
+    padding-inline: 50px;
+}
+
+#containerText #containerTimer {
+    font-family: mareka;
+    font-size: 60px;
+    font-family: mareka;
+    color: rgb(190, 49, 73);
+    background-color: rgb(245, 232, 232);
+    border: solid 3px pink;
+    border-radius: 50px;
+    width: fit-content;
+    padding-inline: 50px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Click The Clown</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="containerText">
+            <h1>❀ Click The Clown ❀</h1>
+            <p id="containerTimer" class="cacher"></p>
+            <div id="buttons">
+                <p id="buttonStart" onclick="start()">START PLAYING</p>
+                <p id="buttonSettings" onclick="settings()">SETTINGS</p>
+                <p id="buttonQuit" onclick="quit()">QUIT</p>
+            </div>
+            <div id="gameContainer">
+                <div class="headGirl">
+                    <img id="clown" src="assets/images/clown-head.jpg.png" alt="clownHead" class="clownHead">
+                </div>
+            </div>
+
+        </div>
+        <div id="containerScore" class="cacher">
+            <p>Your score is :</p>
+        </div>
+        <div id="containerLevel" class="cacher">
+            <p id="buttonEasy" onclick="easy()">EASY</p>
+            <p id="buttonNormal" onclick="normal()">NORMAL</p>
+            <p id="buttonDifficult" onclick="difficult()">DIFFICULT</p>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
