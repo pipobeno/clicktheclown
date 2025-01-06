@@ -57,6 +57,8 @@ function easy() {
     setInterval(move, 1000);
 }
 
+// bitch wtf
+
 function normal() {
     gameStarted = true;
     startTimer()
